@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknik Destek</title>
+    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img class="img" src="img/2024-03-28.jpg" alt="Logo">
+        <nav class="menu">
+            <a href="index.html">Anasayfa</a>  
+            <a>Hizmetlerimiz</a>
+                <ul class="hizmet">    
+                    <li>
+                        <a href="teknik.html">Teknik Destek</a>
+                        <hr>
+                        <a href="takip.html">Takip Servis</a>
+                    </li>
+                </ul>
+            <a href="iletisim.html">İletişim</a>
+            </nav>
+    </header>
+    <div class="container">
+        <div class="items">
+            <h1>Biz Kimiz</h1>
+            <p>I'm a paragraph. Click here to add your own text and edit me. 
+                It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+                I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                </div>
+    </div>
+    <footer class="footer">
+        <h3>Adresimiz</h3>
+        <p>Çiftlikköy Mahallesi Mersin Üniversitesi Kampüsü,Teknopark No:201, 33100 Yenişehir/Mersin</p>
+        <hr>
+        <h3>Çalışma Saatlerimiz</h3>
+        <p>Hafta içi 09.00-18.00</p>
+        <hr>
+        <h4>Bize Ulaşın</h4>
+        Telefon:<a href="tel:+905380882431">05380882431</a>
+        Email:<a href="mailto:info@eterna.net.tr">info@eterna.net.tr</a>
+        <hr>
+        <h3>Sosyal Medya Adreslerimiz</h3>
+        <a href="https://www.instagram.com/eternatechnology/" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/company/eterna-inc/" class="fa fa-linkedin"></a>
+    </footer>
+</body>
+</html>
+
+
+style
+/* Header Stili */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1%;
+    text-align: center;
+    overflow: auto; /* İçerik ile kayan öğeleri düzgün hizalamak için */
+}
+
+.img {
+    max-width: 15%;
+    float: left;
+    border-radius: 50%; /* Yuvarlak köşeler */
+}
+
+.menu {
+    float: right; /* Menüyü sağa yasla */
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px 10px 0; 
+    transition: color 0.3s; /* Renk değişimlerinde yumuşak geçiş */
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: #ffd700; /* Hover olduğunda renk değişimi */
+}
+
+/* Hizmetlerimiz Menüsü */
+.hizmet{
+    display: none;
+}
+.hizmet.active {
+    display: block;
+    position: absolute;
+    background-color: #333;
+    list-style-type: none;
+    padding: 1%;
+    margin: 1%;
+}
+
+.hizmet li {
+    text-align: right;
+}
+
+.hizmet a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s; /* Renk değişimlerinde yumuşak geçiş */
+}
+
+.hizmet a:hover {
+    background-color: #555; /* Hover olduğunda arka plan rengi değişimi */
+}
+/* Container Stili */
+.container{
+    background-image: url(img/fix.webp);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+.items{
+    text-align: center;
+    color: gray;
+    font-size: 25px;
+}
+.items h1{
+    color: black;
+}
+/* Footer Stili */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    clear: both; /* Float ile kayan öğelerin altındaki içeriğin yerleştirilmesi */
+}
+
+.footer p, .footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Font Awesome ikonları */
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    transition: opacity 0.3s; /* Yumuşak geçiş efekti */
+}
+
+.fa:hover {
+    opacity: 0.7; /* Hover olduğunda opaklık değişimi */
+}
